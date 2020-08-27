@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD//EN"
+        "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+        <property name="connection.url">jdbc:mysql://185.125.47.228:3306/synergy</property>
+        <property name="connection.driver_class">com.mysql.cj.jdbc.Driver</property>
+        <mapping class="com.tartyp.otchet.entity.ActionsEntity"/>
+        <mapping class="com.tartyp.otchet.entity.DepartmentsEntity"/>
+        <mapping class="com.tartyp.otchet.entity.PositionsEntity"/>
+        <mapping class="com.tartyp.otchet.entity.TranslationsEntity"/>
+        <mapping class="com.tartyp.otchet.entity.UserpositionsEntity"/>
+        <mapping class="com.tartyp.otchet.entity.UsersEntity"/>
+        <mapping class="com.tartyp.otchet.entity.RegistriesEntity"/>
+        <!-- <property name="connection.username"/> -->
+        <!-- <property name="connection.password"/> -->
+
+        <!-- DB schema will be updated if needed -->
+        <!-- <property name="hibernate.hbm2ddl.auto">update</property> -->
+    </session-factory>
+</hibernate-configuration>
